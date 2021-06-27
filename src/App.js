@@ -156,7 +156,7 @@ function App() {
       <div style={{ color: '#ff0000', fontFamily: 'Comic Sans MS', fontSize: '80px', textAlign: 'center', gridColumnStart: 1,
   gridColumnEnd: 4 }}>👊 Hand Crime Detector 2000‼</div>
       <div style={{ gridColumnStart: 1,
-  gridColumnEnd: 3}}> <GaugeChart id="gauge-chart1" percent={riskLevel} formatTextValue={(value => value > 50 ? 'Bad Hand' : 'Good Hand')} />
+  gridColumnEnd: 3}}> <GaugeChart id="gauge-chart1" percent={riskLevel} formatTextValue={(value => value > 50 ? 'Bad Hand' : value==50 ? '' : 'Good Hand')} />
       </div>
       <div><Webcam ref={webcamRef} />
       </div>
