@@ -66,7 +66,8 @@ function App() {
   const [confidence, setConfidence] = React.useState(null);
   const [riskLevel, setRiskLevel] = React.useState(0.5);
 
-
+// based on
+//https://heartbeat.fritz.ai/how-to-detect-a-thumbs-up-in-the-browser-with-tensorflow-js-b53fde1bf0f7
   const detect = async (net) => {
     if (
       typeof webcamRef.current !== "undefined" &&
